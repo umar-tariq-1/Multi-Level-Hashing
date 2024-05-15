@@ -1,7 +1,6 @@
-
 import argparse
 
-from .Models.Encoder import Encoder
+from Models.Encoder import Encoder
 
 def main()->None:
     parser = argparse.ArgumentParser(
