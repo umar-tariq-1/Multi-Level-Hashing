@@ -1,6 +1,6 @@
 import argparse
 
-from Models.Encoder import Encoder
+from Tree.Models.Encoder import Encoder
 
 def main()->None:
     parser = argparse.ArgumentParser(
@@ -22,11 +22,8 @@ def main()->None:
     else:
         encoder = Encoder(args.string, isFile=False)
     
-    
-main()
-    
+    print(f"\n\033[1m\033[32mFinal Hash Value: {encoder.getFinalHash()}\033[0m")
     
     
-    
-    
-    
+if __name__ == "__main__":
+    main()

@@ -1,7 +1,7 @@
 import string
 import random
 import argparse
-from Models.Encoder import Encoder
+from Tree.Models.Encoder import Encoder
 
 
 def generate_random_string(length):
