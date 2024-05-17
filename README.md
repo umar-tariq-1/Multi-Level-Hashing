@@ -17,3 +17,6 @@ The tree structure is inspired from Encoding Techniques. It builds a frequency d
 ## Hash Function
 
 ## Attack
+
+In our attack strategy, we first generated 10,000 random strings of the same length as the given string and computed their hashes to check for potential collisions with the hash of the original string. This extensive testing was designed to evaluate the collision resistance of the hash function using a diverse set of inputs. Additionally, we implemented a targeted approach by altering a single random character in the original string five times. For each modified string, we computed the new hash to determine if any collisions occurred. This dual approach allowed us to thoroughly test the robustness of the hash function against both random and systematic modifications.
+![image](https://github.com/umar-tariq-1/Multi-Level-Hashing/assets/97828137/0b80fb1c-fd73-49ec-b688-e7a8f62faa7b)
