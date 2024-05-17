@@ -25,7 +25,7 @@ class Encoder:
         self.fileDict = self.parseFreq(self.fileContent)
         self.nodeList = self.makeNodes()
         self.makeTree()
-        self.printTree(self.nodeList[0])
+        # self.printTree(self.nodeList[0])
         
     def getFinalHash(self)->str:
         
