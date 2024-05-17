@@ -53,7 +53,7 @@ class Encoder:
         while len(self.nodeList) > 1:
             nodeL = heapq.heappop(self.nodeList)
             nodeR = heapq.heappop(self.nodeList)
-            tempNode = Node(nodeL.freq+nodeR.freq, "Temp Node")
+            tempNode = Node(nodeL.freq+nodeR.freq, f"Temp Node")
             tempNode.leftChild = nodeL
             tempNode.rightChild = nodeR
             tempNode.setWordHash(self.hash, newWord=f"{nodeL.hashValue}{nodeR.hashValue}")
